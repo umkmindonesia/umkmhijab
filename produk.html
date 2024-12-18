@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produk</title>
+  <style>
+    ul.nav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    ul.nav li {
+      float: left;
+    }
+
+    ul.nav li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    ul.nav li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    .active {
+      background-color: #04AA6D;
+    }
+
+    body {
+      background-color: lightgrey;
+      text-align: center;
+      margin: 0;
+      padding-top: 60px;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+    }
+
+    .desc {
+      background-color: lightgrey;
+      font-size: 20px;
+      line-height: 1.6; 
+      margin: 20px auto;
+      width: 80%; 
+      text-align: center; 
+    }
+
+    .gallery {
+      background-color: lightgrey;
+      display: inline-block;
+      text-align: center;
+      margin: 10px;
+    }
+
+    input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type=submit] {
+      width: 100%;
+      background-color: #333;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #111;
+    }
+
+    div {
+      border-radius: 5px;
+      background-color: lightgrey;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <ul class="nav">
+    <li><a href="#beranda">Beranda</a></li>
+    <li><a href="#profil">Profil</a></li>
+    <li><a href="#produk">Produk</a></li>
+    <li><a href="#saran">Saran</a></li>
+  </ul>
+
+  <section id="produk">
+    <h1>KATALOG</h1>
+    <div class="gallery">
+      <img src="./Gambar/katalog1.jpg" width="400" height="500" alt="Soklat">
+      <div class="desc">Soklat</div>
+    </div>
+    
+    <div class="gallery">
+      <img src="./Gambar/katalog2.jpg" width="400" height="500" alt="Klawu">
+      <div class="desc">Klawu</div>
+    </div>
+    
+    <div class="gallery">
+      <img src="./Gambar/katalog3.jpg" width="400" height="500" alt="Ireng">
+      <div class="desc">Ireng</div>
+    </div>
+
+    <h1>Deskripsi</h1>
+    <img src="./Gambar/detail.jpg" width="400" height="500" alt="Detail Jahitan">
+    <div class="desc">Detail Jahit Tepi dan Ketipisan Bahan</div>
+
+    <div style="padding:6px;">
+      <h3>Soklat</h3>
+      <p>Warna cokelat yang lembut dan hangat, hijab Soklat memberikan kesan natural yang cocok untuk segala suasana. Warna ini membawa nuansa tenang dan nyaman, ideal untuk tampilan yang elegan namun tetap kasual. Cocok untuk kulit hangat dan tampak serasi dipadukan dengan busana warna krem atau hijau tua.</p>
+      <h3>Klawu</h3>
+      <p>Warna abu-abu tua dari hijab Klawu menghadirkan sentuhan modern yang elegan. Kesan yang diciptakan warna ini adalah ketenangan yang stylish, cocok untuk tampilan profesional dan formal, namun tetap anggun untuk kegiatan sehari-hari. Warna abu-abu ini cocok untuk semua tone kulit, terutama jika dipasangkan dengan warna putih atau navy.</p>
+      <h3>Ireng</h3>
+      <p>Hijab Ireng hadir dengan warna hitam pekat yang klasik dan tak lekang oleh waktu. Warna ini memberikan kesan anggun dan berkelas, mudah dipadukan dengan berbagai gaya dan busana. Pilihan sempurna untuk tampilan chic dan minimalis. Hitam klasik yang elegan, sesuai untuk semua warna kulit dan sempurna dipadukan dengan busana berwarna cerah atau pastel.</p>
+    </div>
+
+    <div>
+      <h2>Silahkan Isi Form Dibawah Ini Untuk Order</h2>
+      <form action="/action_page.php">
+        <label for="warna">Warna</label>
+        <input type="text" id="warna" name="warna">
+
+        <label for="jumlah">Jumlah</label>
+        <input type="text" id="jumlah" name="jumlah">
+        
+        <input type="submit" value="Submit">
+      </form>
+      <h3>Terima Kasih Sudah Berbelanja</h3>
+    </div>
+  </section>
+</body>
+</html>
